@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 vim.g.netrw_liststyle = 3
+vim.o.winborder = "rounded"
 
 local opt = vim.opt
 
