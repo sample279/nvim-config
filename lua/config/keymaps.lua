@@ -6,6 +6,8 @@ local opts = { noremap = true, silent = true }
 
 local keymap = vim.keymap -- for conciseness
 
+keymap.set("n", "<leader>ds", vim.diagnostic.open_float, { desc = "Show line diagnostics" })
+
 vim.keymap.del({ "n", "i", "v" }, "<C-s>") -- remove lazyvim default bind
 keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode with ctrl + s" }) -- use ctrl + s to exit insert mode
 
