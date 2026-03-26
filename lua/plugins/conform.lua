@@ -2,28 +2,27 @@ return {
   "stevearc/conform.nvim",
   opts = {
     formatters_by_ft = {
-      -- JavaScript / TypeScript
+      -- biome formatting
       javascript = { "biome" },
       javascriptreact = { "biome" },
       typescript = { "biome" },
       typescriptreact = { "biome" },
       json = { "biome" },
 
-      -- C / C++
+      -- prettier formatting
+      graphql = { "prettier" },
+
+      -- clang formatting
       c = { "clang_format" },
       cpp = { "clang_format" },
 
-      -- Lua
       lua = { "stylua" },
 
-      -- Shell
       sh = { "shfmt" },
       bash = { "shfmt" },
 
-      -- SQL (Postgres)
       sql = { "pg_format" },
 
-      -- disbale fish_indent
       fish = {},
     },
   },
